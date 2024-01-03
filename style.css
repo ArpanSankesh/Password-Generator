@@ -100,7 +100,7 @@
 }
 
 .items label.btn{
-    width: 4rem;
+    width: 4.2rem;
     height: 2.5em;
     border-radius: 2rem;
     background-color: var(--primary-color);
@@ -118,8 +118,8 @@
     position: absolute;
     transform: translateY(-50%);
     border-radius: 50%;
-    transition: 0.9s;
-    
+    transition: left 0.3s ease;
+    left: 5px;   
 }
 
 .items input[type="checkbox"]:checked + label.btn:before {
