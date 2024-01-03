@@ -170,7 +170,7 @@
       }
  }
 
- @media screen and (max-width:1024px){
+ /* @media screen and (max-width:1024px){
     .container{
         width: 50rem;
     }
@@ -181,7 +181,8 @@
         padding: 2.5rem;
         font-size: 2rem;
     }
- }
+ } */
+
  @media screen and (max-width:1024px )and (max-height:600px){
     .container{
         width: 50rem;
