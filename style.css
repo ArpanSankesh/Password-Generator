@@ -77,6 +77,41 @@
     border-radius: 10px;
     outline: none;
     cursor: pointer;
+    position: relative;
+}
+
+.copy-btn::before{
+    content: 'Copied';
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 4rem;
+    height: 2.6rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    top: -55px;
+    left: -4px;
+    z-index: 1;
+    display: none;
+}
+.copy-btn::after{
+    display: none;
+    content: '';
+    font-size: 1rem;
+    width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid var(--secondary-color);
+    position: absolute;
+    border-radius: 10px;
+    top: -23px;
+    left: 18px;
+}
+.btnClicked{
+    background-color: #e9b82426;
 }
 
 .custom-area{
