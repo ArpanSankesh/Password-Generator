@@ -123,7 +123,7 @@
 }
 
 .items input[type="checkbox"]:checked + label.btn:before {
-    left: calc(50% - 5px );
+  left: calc(60% - 10px );
     
 }
 
@@ -162,4 +162,247 @@
 
  .generate-btn i{
     margin-left: 10px;
+ }
+
+ @media screen and (max-width:1380px){
+    .items input[type="checkbox"]:checked + label.btn:before {
+        left: calc(50% - 5px);  
+      }
+ }
+
+ @media screen and (max-width:1024px){
+    .container{
+        width: 50rem;
+    }
+    .items{
+        padding: 20px;
+    }
+    .generate-btn{
+        padding: 2.5rem;
+        font-size: 2rem;
+    }
+ }
+ @media screen and (max-width:1024px )and (max-height:600px){
+    .container{
+        width: 50rem;
+        padding: 10px 30px;
+    }
+    .items{
+        padding: 5px 20px;
+    }
+    .generate-btn{
+        padding: 2rem;
+        font-size: 1.5rem;
+        height: 2rem;
+    }
+    .items label.btn{
+        width: 4.2rem;
+        height: 2.5em;
+    }  
+    
+    .items label.btn:before{
+        width: 2rem;
+        height: 2rem;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .heading2{
+        font-size: 1.5rem;
+    }
+    .items input[type="checkbox"]:checked + label.btn:before {
+        left: calc(60% - 10px );
+          
+      }
+      .content{
+        padding: 20px 0;
+      }
+ }
+
+ 
+
+ @media screen and (max-width:780px){
+    .container{
+        width: 40rem;
+    }
+ }
+ @media screen and (max-width:680px){
+    .container{
+        width: 35rem;
+    }
+ }
+ @media screen and (max-width:540px){
+    .container{
+        width: 35rem;
+        padding: 20px;
+    }
+    .items{
+        padding: 10px 20px;
+    }
+    .items input[type="checkbox"]:checked + label.btn:before {
+        left: calc(60% - 20px );
+    }
+ }
+
+ @media screen and (max-width:580px){
+    .container{
+        width: 30rem;
+    }
+    .content{
+        padding-bottom:20px ;
+    }
+    .items{
+        font-size: 0.8rem;
+    }
+    .items label.btn:before{
+        width: 1.6rem;
+        height: 1.6rem;
+
+    }
+    .items input[type="checkbox"]:checked + label.btn:before {
+        left: calc(65% - 5px );
+          
+      }
+ }
+
+ @media screen and (max-width:480px){
+    .container{
+        width: 27rem;
+    }
+    .heading{
+        font-size: 1.7rem;
+    }
+    .heading2{
+        font-size: 1.7rem;
+    }
+    .input-box{
+        width: 88% ;
+    }
+    .content{
+        padding: 30px 0 ;
+    }
+    .items{
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .items h3{
+        padding-right: 30px;
+    }
+    .items label.btn:before{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    .generate-btn{
+        padding: 0;
+    }
+ }
+
+ @media screen and (max-width:430px){
+    .container{
+        width: 25.5rem;
+        padding: 20px;
+    }    
+ }
+ @media screen and (max-width:420px){
+    .container{
+        width: 23rem;
+        padding: 20px;
+    }
+
+    .input-box{
+        width: 86% ;
+    }
+    .copy-btn{
+        width: 12%;
+    }
+    .content{
+        padding: 30px 0 10px 0 ;
+    }
+    .items{
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .items h3{
+        padding-right: 40px;
+    }
+    .items label.btn:before{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    .items label.btn:before{
+        width: 1.5rem;
+        height: 1.5rem;
+
+    }
+    
+ }
+ @media screen and (max-width:390px){
+    .container{
+        width: 21rem;
+        padding: 20px;
+    }
+
+    .items h3{
+        padding-right:20px ;
+        font-size: 0.8rem;
+    }  
+    .generate-btn{
+        font-size: 1.3rem;
+    }
+ }
+ @media screen and (max-width:280px){
+    .container{
+        width: 15rem;
+        padding: 20px 10px;
+    }
+
+    .input-box{
+        height: 2rem;
+        padding: 5px;
+    }
+    .input-box::placeholder{
+        font-size: 0.9rem;
+    }
+    .copy-btn{
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .heading{
+        font-size: 1.2rem;
+    }
+
+    .heading2{
+        font-size: 1.2rem;
+    }
+    .items{
+        padding: 5px 10px ;
+    }
+    .items h3{
+        padding-right:20px ;
+        font-size: 0.68rem;
+    }  
+    .generate-btn{
+        font-size: 1rem;
+        padding: 10px;
+        height: 2rem;
+    }
+    .custom-area{
+        padding-top: 5px;
+    }
+
+    .items label.btn{
+        width: 3rem;
+        height: 2.2em;
+    }  
+    
+    .items label.btn:before{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .character-length{
+        width: 3rem;
+        height: 2.2em;
+    }
  }
