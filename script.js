@@ -12,15 +12,17 @@ const uppercaseChar = "ABCDEFGHIGKLMNOPQRSTUVWXYZ";
 const lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
 const symbolChar = "~!@#$%^&*()";
 
-const checkChar = function () {
+const checkChar = () => {
   const length = parseInt(characterLength.value);
   if (isNaN(length) || length < 8 || length > 16) {
     alert("Please Enter the values between 8-16 ");
+    process.exit();
+    inputBox.value = "";
   }
   console.log(length);
 };
 
-const generatePassword = function () {
+const generatePassword = () => {
   checkChar()
   if (checkChar  == true){
     console.log("idk what i did here!! LOL")
@@ -58,7 +60,7 @@ const generatePassword = function () {
   inputBox.value = password;
 };
 
-const copyPassword = function () {
+const copyPassword = () => {
   navigator.clipboard.writeText(inputBox.value);
   // copyBtn.classList.add('btnClicked')
 };
