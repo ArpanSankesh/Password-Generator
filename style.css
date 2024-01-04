@@ -80,38 +80,44 @@
     position: relative;
 }
 
-.copy-btn::before{
+/* .copy-btn::before{
     content: 'Copied';
     font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     width: 4rem;
-    height: 2.6rem;
+    height: 2rem;
     background-color: var(--secondary-color);
     border-radius: 10px;
-    top: -55px;
+    top: -47px;
     left: -4px;
     z-index: 1;
     display: none;
+    transition: 0.9s;
 }
 .copy-btn::after{
     display: none;
     content: '';
     font-size: 1rem;
     width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 20px solid var(--secondary-color);
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid var(--secondary-color);
     position: absolute;
     border-radius: 10px;
-    top: -23px;
+    top: -20px;
     left: 18px;
+    transition: 0.2s;
 }
-.btnClicked{
-    background-color: #e9b82426;
+
+.copy-btn.active::after,
+.copy-btn.active::before{
+    display: block;
+    
+} */
+
+.active{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .custom-area{
@@ -131,7 +137,7 @@
     color: #fff;
 }
 .check{
-    /* display: none; */
+    display: none;
 }
 
 .items label.btn{
@@ -148,6 +154,10 @@
     content: "";
     width: 2rem;
     height: 2rem;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff1f;
     top: 50%;
     position: absolute;
@@ -156,6 +166,13 @@
     transition: left 0.3s ease;
     left: 5px;   
 }
+.items input[type="checkbox"]:checked + label.btn::before {
+    content: 'ON'; /* Show 'ON' when the checkbox is checked */
+  }
+  
+  .items input[type="checkbox"]:not(:checked) + label.btn::before {
+    content: 'OFF'; /* Show 'OFF' when the checkbox is not checked */
+  }
 
 .items input[type="checkbox"]:checked + label.btn:before {
   left: calc(60% - 10px );

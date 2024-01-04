@@ -16,16 +16,15 @@ const checkChar = function () {
   const length = parseInt(characterLength.value);
   if (isNaN(length) || length < 8 || length > 16) {
     alert("Please Enter the values between 8-16 ");
+    inputBox.value = "";
+    process.exit();
   }
-  console.log(length);
 };
 
 const generatePassword = function () {
-  checkChar()
-  if (checkChar  == true){
-    console.log("idk what i did here!! LOL")
-  }
-  
+  copyBtn.classList.remove("active");
+  checkChar();
+
   const length = parseInt(characterLength.value);
 
   inputBox.value = characterLength.value;
@@ -46,21 +45,17 @@ const generatePassword = function () {
     newPassword += symbolChar;
   }
 
-  // console.log(newPassword.length);
   for (let i = 0; i < length; i++) {
     const randomIndex = Math.floor(Math.random() * newPassword.length);
     password += newPassword[randomIndex];
-    // console.log(typeof password)
-    // console.log(length);
     console.log(newPassword);
-    // console.log(i);
   }
   inputBox.value = password;
 };
 
 const copyPassword = function () {
   navigator.clipboard.writeText(inputBox.value);
-  // copyBtn.classList.add('btnClicked')
+  copyBtn.classList.add("active");
 };
 
 generateBtn.addEventListener("click", generatePassword);
