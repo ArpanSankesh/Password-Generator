@@ -131,7 +131,7 @@
     color: #fff;
 }
 .check{
-    display: none;
+    /* display: none; */
 }
 
 .items label.btn{
