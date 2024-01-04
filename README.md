@@ -1,6 +1,4 @@
-#PassCraft
-
-# Password Generator
+<h1 align="center">PassCraft</h1>
 
 ## Overview
 This Password Generator is a straightforward tool designed to create strong and secure passwords effortlessly. It offers customization options to tailor passwords according to specific requirements.
