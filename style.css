@@ -67,6 +67,10 @@
     color: #fff;
 } */
 
+.check {
+    display: none;
+}
+
 .copy-btn{
     width: 10%;
     height: 2.6rem;
