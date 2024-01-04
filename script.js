@@ -16,32 +16,19 @@ const checkChar = () => {
   const length = parseInt(characterLength.value);
   if (isNaN(length) || length < 8 || length > 16) {
     alert("Please Enter the values between 8-16 ");
-<<<<<<< HEAD
     inputBox.value = "";
     process.exit();
-=======
-    process.exit();
-    inputBox.value = "";
->>>>>>> fbcff669cc8738d310288d3158e200c460f43a6c
+    
   }
 };
 
-<<<<<<< HEAD
-const generatePassword = function () {
+const generatePassword = () => {
   copyBtn.classList.remove("active");
   checkChar();
 
-=======
-const generatePassword = () => {
-  checkChar()
-  if (checkChar  == true){
-    console.log("idk what i did here!! LOL")
-  }
-  
->>>>>>> fbcff669cc8738d310288d3158e200c460f43a6c
   const length = parseInt(characterLength.value);
 
-  inputBox.value = characterLength.value;
+
   let password = "";
 
   let newPassword = "";
